@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Lista de Tarefas</title>
+</head>
+<body>
+
+  <main class="todo-container">
+    <header data-search class="main-title">
+      <h1>To-Do List<span class="dot-dec">.</span></h1>
+      <form data-search="form-container" autocomplete="off">
+        <div data-search="search-container" class="search-container hidden">
+          <label data-search="label" for="search"><img src="./assets/icons/lupa.svg" alt="Lupa"></label>
+          <input data-search="search" type="text" name="search" id="search" placeholder="Buscar tarefas" autocomplete="off">
+        </div>
+      </form>
+    </header>
+
+    <aside class="todo-options">
+      <img class="aside-icon" src="./assets/icons/usuario.svg" alt="Icone Usuário">
+    </aside>
+
+    <ul data-todo="list" class="todo-list">
+      <li id="model">
+        <p><input type="checkbox"></p>
+        <img class="trash" src="./assets/icons/lixeira.svg" alt="Icone Lixeira">
+      </li>
+      <li>
+        <p><input type="checkbox">Estudar JavaScript</p>
+        <img class="trash" src="./assets/icons/lixeira.svg" alt="Icone Lixeira">
+      </li>
+      <li>
+        <p><input type="checkbox">Estudar React.js</p>
+        <img class="trash" src="./assets/icons/lixeira.svg" alt="Icone Lixeira">
+      </li>
+      <li>
+        <p><input type="checkbox">Estudar Node.js</p>
+        <img class="trash" src="./assets/icons/lixeira.svg" alt="Icone Lixeira">
+      </li>
+      <li>
+        <p><input type="checkbox">Lavar a louça</p>
+        <img class="trash" src="./assets/icons/lixeira.svg" alt="Icone Lixeira">
+      </li>
+    </ul>
+    <form data-newTask="container" class="insert-new-task-container">
+      <div class="new-task">
+        <label class="title-new-task" for="newTask">New Task</label>
+        <input type="text" name="newTask" id="newTask">
+      </div>
+      <button class="new-task-add">
+        <img src="./assets/icons/add.svg" alt="Icone Mais">
+      </button>
+    </form>
+  </main>
+  
+  <script src="./js/script.js"></script>
+</body>
+</html>
